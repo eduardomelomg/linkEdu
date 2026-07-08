@@ -14,7 +14,7 @@ export default function Home() {
     <main className="mx-auto w-full max-w-[460px] px-4 pt-6 pb-11">
       {/* cabeçalho / status */}
       <div className="mb-3.5 flex items-center justify-between font-mono text-[11px] tracking-wide text-dim">
-        <span>PAINEL · EDUMELO.DEV</span>
+        <span>PAINEL · EDUMELOO.DEV</span>
         {profile.available && (
           <span className="inline-flex items-center gap-1.5 text-green">
             <span className="pulse-ring h-2 w-2 rounded-full bg-green" />
