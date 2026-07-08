@@ -33,6 +33,8 @@ export const systems = [
 ];
 
 export const links = [
+  { name: "Site", desc: "deveduardomelo.nucleodigital.cloud", icon: "site",
+    href: "https://deveduardomelo.nucleodigital.cloud/" },
   { name: "WhatsApp", desc: "Falar sobre um projeto", icon: "whatsapp",
     href: "https://wa.me/5587981115127" },
   { name: "LinkedIn", desc: "in/edumeloo", icon: "linkedin",
