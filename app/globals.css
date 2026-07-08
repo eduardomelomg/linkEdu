@@ -1,0 +1,55 @@
+@import "tailwindcss";
+
+:root {
+  --bg: #0c1016;
+  --card: #151b24;
+  --card2: #1a222d;
+  --line: #242e3b;
+  --txt: #e6ebf2;
+  --dim: #8593a6;
+  --accent: #5b8def;
+  --green: #34d399;
+  --violet: #a78bfa;
+  --amber: #fbbf24;
+}
+
+/* Expõe os tokens pro Tailwind v4 (utilitários bg-card, text-dim, etc.) */
+@theme inline {
+  --color-bg: var(--bg);
+  --color-card: var(--card);
+  --color-card2: var(--card2);
+  --color-line: var(--line);
+  --color-txt: var(--txt);
+  --color-dim: var(--dim);
+  --color-accent: var(--accent);
+  --color-green: var(--green);
+  --color-violet: var(--violet);
+  --color-amber: var(--amber);
+  --font-display: var(--font-space-grotesk);
+  --font-body: var(--font-inter);
+  --font-mono: var(--font-jetbrains);
+}
+
+html {
+  -webkit-text-size-adjust: 100%;
+}
+
+body {
+  background-color: var(--bg);
+  color: var(--txt);
+  background-image:
+    radial-gradient(circle at 20% 0%, rgba(91, 141, 239, 0.1), transparent 45%),
+    radial-gradient(circle at 90% 20%, rgba(167, 139, 250, 0.08), transparent 40%);
+  -webkit-font-smoothing: antialiased;
+}
+
+@keyframes pulse-ring {
+  0% { box-shadow: 0 0 0 0 rgba(52, 211, 153, 0.5); }
+  70% { box-shadow: 0 0 0 7px rgba(52, 211, 153, 0); }
+  100% { box-shadow: 0 0 0 0 rgba(52, 211, 153, 0); }
+}
+.pulse-ring { animation: pulse-ring 2s infinite; }
+
+@media (prefers-reduced-motion: reduce) {
+  .pulse-ring { animation: none; }
+}
